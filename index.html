@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcaçuz</title>
+    <!--CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <!--Bootstrap icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--JavaScript Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+    <!--CSS do projeto-->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <style>
+        .modal {
+            width: 300px;
+        }
+        .modal-content {
+            width: 300px;
+        }
+        .list-group-item:hover {
+            background-color: rgb(59, 57, 57, 0.164)!important;
+        }
+    </style>
+
+</head>
+
+<body>
+  <!--menu lateral-->
+<nav class="navbar navbar-light bg-light shadow">
+    <div class="container-fluid">
+      <a href="#" class="navbar-branc">
+        <img src="imagens/LOGO.jpg" width="190px">
+      </a>
+      <span class="navbar-brand mb-0 h1">Compre e leve o refil com 50% de desconto!</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav> 
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Início</li>
+                <li class="list-group-item">
+                  <a class="nav-link" href="#perfumaria-feminina">Perfumaria Feminina</a>
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link" href="#perfumaria-masculina">Perfumaria Masculina</a>
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link" href="#contact-area">Contato</a>
+                </li>
+              </ul>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!--fim menu lateral-->
+  <br>
+  
+  <!--inicio carrosel-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/CARROSEL1.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/CARROSEL2.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/CARROSEL3.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próxima</span>
+    </button>
+  </div>
+<!--fim carrosel-->
+<br>
+<!--inicio cards feminino-->
+<h2 class="text-center">PERFUMARIA FEMININA</h2>
+<br>
+
+<div id="perfumaria-feminina" class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="imagens/LILY1.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Lily Eau de Parfum 75ml</h5>
+        <p class="card-text">A fragrância que você ama está com a nova embalagem linda, 
+          cheia de charme e que fica perfeita para enfeitar a penteadeira e perfumar a pele 
+          com sua fragrância favorita sempre que quiser.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="imagens/ELYSEE2.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Elysée Blanc Eau de Parfum 50ml</h5>
+        <p class="card-text">Elysée Blanc Eau de Parfum entrega uma fragrância feminina 
+          exclusiva com muita sofisticação para envolver seus dias. O Chipre que comanda sua 
+          família olfativa entrega a união de notas amadeiradas.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="imagens/COFFEE3.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Coffee Woman Seduction Touch 100m</h5>
+        <p class="card-text">Coffee Boticário acredita que o toque é a forma mais íntima de se relacionar 
+          e esquentar a sedução a dois. O toque tem intenção, tem o poder de falar sem dizer nada.
+           O toque certo provoca, arrepia e deixa um gostinho de quero mais.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--fim cards feminino-->
+<br><br>
+
+<!--inicio cards masculino-->
+<h2 class="text-center">PERFUMARIA MASCULINA</h2>
+<br>
+
+<div id="perfumaria-masculina" class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+
+    <div class="card">
+      <img src="imagens/IMPRESSION1.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Impression Audaz Parfun 100ml</h5>
+        <p class="card-text">Impression Audaz Eau de Parfum: uma fragrância masculina intensa e marcante, 
+          que combina OUD, a madeira mais luxuosa do mundo, a notas ambaradas sensuais. </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="imagens/ZAAD2.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Zaad Santal Eau de Parfum 95ml</h5>
+        <p class="card-text">EZaad Santal Eau de Parfum é uma fragrância que traz o calor e a sofisticação
+           do Sândalo para enriquecer a rotina do homem que não abre mão de uma perfumação intensa e elegante. </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="imagens/COFFE3MASCULINO.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Coffee Man Desodorante Colônia 100ml</h5>
+        <p class="card-text">Uma fragrância masculina que traz a exclusiva tecnologia da infusão dos mais nobres
+           grãos de café combinada com notas de couro e tabaco e um detalhe especial: um toque de cardamomo</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--fim cards masculino-->
+<br><br>
+<!--inicio rodapé-->
+<footer>
+<div id="contact-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-center">Entre em contato conosco</h3>
+      </div>
+      <br><br><br>
+      <div class="col-md-4 contact-box">
+        <i class="fas fa-phone"></i>
+        <p><spam class="contact-tile">Ligue para:</spam>(79) 99999-9999</p>
+        <p><spam class="contact-tile">Horários:</spam>8:00-18:00</p>
+      </div>
+
+      <div class="col-md-4 contact-box">
+        <i class="fas fa-envelope"></i>
+        <p><spam class="contact-tile">Envie um e-mail:</spam> alcaçuzperfumaria@gmail.com</p>
+      </div>
+
+      <div class="col-md-4 contact-box">
+        <i class="fas fa-envelope"></i>
+        <p><spam class="contact-tile">Venha nos conhecer</spam>Av. Luiz Lua Gonzaga, 400-B</p>
+      </div>
+      <br><br><br><br>
+      <div class="col-md-6" id="msg-box">
+        <p>Ou deixe uma mensagem:</p>
+      </div>
+      <div class="col-md-6" id="contact-form">
+        <form action="">
+          <input type="email" class="form-control" placeholder="E-mail" name="email">
+          <input type="text" class="form-control" placeholder="Assunto" name="subject">
+          <textarea class="form-control" rows="3" placeholder="Sua mensagem" name="message"></textarea>
+          <input type="submit" class="main-btn" value="enviar">
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+</footer>
+
+
+
+
+</body>
+</html>
